@@ -1,0 +1,410 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/chess_tiles_black.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/chess_tile_blue.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/chess_tile_peach.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/chess_pieces_white.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/BoardMap.gd" type="Script" id=6]
+
+[sub_resource type="TileSet" id=1]
+0/name = "chess_tile_blue.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 16, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "chess_tile_peach.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+
+[node name="WhitePieces" type="Node" parent="GameManager"]
+
+[node name="WhitePawn" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 0, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn"]
+
+[node name="WhitePawn2" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 16, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn2"]
+
+[node name="WhitePawn3" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 32, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn3"]
+
+[node name="WhitePawn4" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 48, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn4"]
+
+[node name="WhitePawn5" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 64, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn5"]
+
+[node name="WhitePawn6" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 80, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn6"]
+
+[node name="WhitePawn7" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 96, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn7"]
+
+[node name="WhitePawn8" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 112, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhitePawn8"]
+
+[node name="WhiteKing" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 48, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteKing"]
+
+[node name="WhiteQueen" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 64, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteQueen"]
+
+[node name="WhiteBishop" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 80, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteBishop"]
+
+[node name="WhiteBishop2" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 32, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteBishop2"]
+
+[node name="WhiteKnight" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 96, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteKnight"]
+
+[node name="WhiteKnight2" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 16, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteKnight2"]
+
+[node name="WhiteRook" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 112, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteRook"]
+
+[node name="WhiteRook2" type="Sprite" parent="GameManager/WhitePieces" groups=[
+"pieces",
+"white_pieces",
+]]
+position = Vector2( 0, 112 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/WhitePieces/WhiteRook2"]
+
+[node name="BlackPieces" type="Node" parent="GameManager"]
+
+[node name="BlackPawn" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn"]
+
+[node name="BlackPawn2" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn2"]
+
+[node name="BlackPawn3" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 32, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn3"]
+
+[node name="BlackPawn4" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 48, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn4"]
+
+[node name="BlackPawn5" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 64, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn5"]
+
+[node name="BlackPawn6" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 80, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn6"]
+
+[node name="BlackPawn7" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 96, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn7"]
+
+[node name="BlackPawn8" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 112, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackPawn8"]
+
+[node name="BlackKing" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 48, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackKing"]
+
+[node name="BlackQueen" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackQueen"]
+
+[node name="BlackBishop" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 80, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackBishop"]
+
+[node name="BlackBishop2" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackBishop2"]
+
+[node name="BlackKnight" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackKnight"]
+
+[node name="BlackKnight2" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackKnight2"]
+
+[node name="BlackRook" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+position = Vector2( 112, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackRook"]
+
+[node name="BlackRook2" type="Sprite" parent="GameManager/BlackPieces" groups=[
+"black_pieces",
+"pieces",
+]]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="Tween" type="Tween" parent="GameManager/BlackPieces/BlackRook2"]
+
+[node name="BoardMap" type="TileMap" parent="."]
+position = Vector2( -8, -8 )
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 64
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 0, 0, 3, 1, 0, 4, 0, 0, 5, 1, 0, 6, 0, 0, 7, 1, 0, 65536, 1, 0, 65537, 0, 0, 65538, 1, 0, 65539, 0, 0, 65540, 1, 0, 65541, 0, 0, 65542, 1, 0, 65543, 0, 0, 131072, 0, 0, 131073, 1, 0, 131074, 0, 0, 131075, 1, 0, 131076, 0, 0, 131077, 1, 0, 131078, 0, 0, 131079, 1, 0, 196608, 1, 0, 196609, 0, 0, 196610, 1, 0, 196611, 0, 0, 196612, 1, 0, 196613, 0, 0, 196614, 1, 0, 196615, 0, 0, 262144, 0, 0, 262145, 1, 0, 262146, 0, 0, 262147, 1, 0, 262148, 0, 0, 262149, 1, 0, 262150, 0, 0, 262151, 1, 0, 327680, 1, 0, 327681, 0, 0, 327682, 1, 0, 327683, 0, 0, 327684, 1, 0, 327685, 0, 0, 327686, 1, 0, 327687, 0, 0, 393216, 0, 0, 393217, 1, 0, 393218, 0, 0, 393219, 1, 0, 393220, 0, 0, 393221, 1, 0, 393222, 0, 0, 393223, 1, 0, 458752, 1, 0, 458753, 0, 0, 458754, 1, 0, 458755, 0, 0, 458756, 1, 0, 458757, 0, 0, 458758, 1, 0, 458759, 0, 0 )
+script = ExtResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 56, 56 )
+current = true
+zoom = Vector2( 0.3, 0.3 )
